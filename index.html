@@ -13,6 +13,7 @@
         <span class="logo" aria-hidden="true"></span>
         Leopard
       </a>
+      <div class="brand-tag" aria-hidden="true">Ir Henock production</div>
       <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -29,20 +30,17 @@
   <main class="container">
     <section class="hero">
       <h1>Bienvenue chez SERVIPRO.DRC</h1>
-      <p>Envoyez ce lien à une personne pour qu'elle puisse choisir les produits qu'elle souhaite et nous contacter par WhatsApp.</p>
+      <p>Bienvenue sur notre catalogue de produits. Appuie sur le bouton ci-dessous pour accéder au catalogue, ou partage ce lien avec quelqu’un.</p>
 
-      <form id="access-form" class="card">
-        <label for="accessCode">Code d'accès</label>
-        <input id="accessCode" name="accessCode" placeholder="Ex : LEOPARD2026" autocomplete="off" required />
-        <button type="submit" class="btn">Accéder au catalogue</button>
-        <p class="hint">Vous pouvez copier ce lien et l'envoyer :</p>
-        <div class="share-row">
-          <input id="shareUrl" readonly />
-          <button id="copyLink" type="button" class="btn-sm">Copier</button>
-        </div>
-      </form>
+      <button id="goCatalogue" class="btn">Voir le catalogue</button>
 
-      <p class="footnote">Code d'accès par défaut : <code>LEOPARD2026</code></p>
+      <p class="hint">Vous pouvez copier ce lien et l'envoyer :</p>
+      <div class="share-row">
+        <input id="shareUrl" readonly />
+        <button id="copyLink" type="button" class="btn-sm">Copier</button>
+      </div>
+
+      <p class="footnote">Si le bouton ne fonctionne pas, <a href="catalogue.html">cliquez ici</a>.</p>
     </section>
   </main>
 
