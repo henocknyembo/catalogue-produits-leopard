@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue - Leopard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalogue">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        Leopard
+      </a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalogue">
+      <div class="catalogue-header">
+        <h1>Catalogue de produits</h1>
+        <p>Choisissez les produits que vous souhaitez acheter, puis envoyez-nous la liste via WhatsApp.</p>
+      </div>
+
+      <div class="layout">
+        <section class="products" id="products"></section>
+
+        <aside class="cart">
+          <h2>Panier</h2>
+          <div id="cartItems" class="cart-items"></div>
+          <div class="cart-summary">
+            <div class="cart-row">
+              <span>Total</span>
+              <span id="cartTotal">0,00 FCFA</span>
+            </div>
+            <button id="sendWhatsApp" class="btn" disabled>Envoyer via WhatsApp</button>
+            <button id="clearCart" class="btn btn-secondary" type="button">Vider le panier</button>
+          </div>
+        </aside>
+      </div>
+
+      <div class="catalogue-footnote">
+        <p><strong>Astuce :</strong> Copiez ce lien pour le partager :</p>
+        <div class="share-row">
+          <input id="catalogShare" readonly />
+          <button id="copyCatalogLink" type="button" class="btn-sm">Copier</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year2"></span> Leopard - Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
